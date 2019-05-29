@@ -1,0 +1,25 @@
+@import "./scss/abstracts/variables";
+@import "./scss/abstracts/functions";
+@import "./scss/abstracts/mixins";
+//=======Base
+@import "./scss/base/animation";
+@import "./scss/base/base";
+@import "./scss/base/typography";
+@import "./scss/base/utilities";
+//=======Components
+@import "./scss/components/button";
+@import "./scss/components/compositin";
+@import "./scss/components/feature-box";
+@import "./scss/components/card";
+@import "./scss/components/story";
+@import "./scss/components/bg-video";
+@import "./scss/components/form";
+@import "./scss/components/popup";
+
+//======Layout
+@import "./scss/layout/header.scss";
+@import "./scss/layout/grid.scss";
+@import "./scss/layout/footer.scss";
+@import "./scss/layout/navigation.scss";
+//======pages
+@import "./scss/pages/home";

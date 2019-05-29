@@ -1,0 +1,44 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin col-width($num-col:1 ,$col-num: 2, $gutter-hor: $gutter-horizontal) {
+  width: calc((#{$num-col} * ((100% - (#{$col-num} - 1) * #{$gutter-hor}) / #{$col-num})) + ((#{$num-col} - 1) * #{$gutter-hor}));
+}
+
+// Media Query Manager
+
+/*
+$breakpoint argument choices:
+- phone  : 0-600px: phone
+- tab-port: 600-900px: tablet portrait
+- tab-land: 900-1200px: tablet landscape
+- already written: [1200-1800] is where our normal styles apply
+- big-desk: 1800px + : big desktop
+
+ORDER: Base + Typograaphy > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) { @content; }  // 600px
+  }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) { @content; }  // 900px
+  }
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) { @content; }  // 1200px
+  }
+
+  @if $breakpoint == big-desk {
+    @media (min-width: 112.5em) { @content; }  // 1800px
+  }
+}

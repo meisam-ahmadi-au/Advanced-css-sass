@@ -1,0 +1,10 @@
+<svg width="250px" height="250px" class="svg-5" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    path { fill: #fff; }
+  </style>
+  <circle cx="125" cy="125" r="107" stroke="none" stroke-width="18" fill="none" />
+  <path d="M75,130 L38,93 V189 H56 V133 L67,144 Z"/>
+  <path d="M60,189 L125,46 L164,124 L150,138 L125,87 L78,189 Z"/>
+  <path d="M104,159 L125,179 L212,93 V189 H194 V133 L125,202 L96,174 Z"/>
+  <path d="M179,166 L167,178 L172,189 H190 Z"/>
+</svg>
